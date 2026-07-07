@@ -5,21 +5,21 @@
 class Hreysi < Formula
   desc "Ambient buildlog capture — every commit, journaled."
   homepage "https://github.com/Peleke/hreysi"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Peleke/hreysi/releases/download/v0.1.4/hreysi_0.1.4_darwin_amd64.tar.gz"
-      sha256 "c6469aa93fbbc90b0e451e1924978091be4e715ce3e8f1878617051ec64f68df"
+      url "https://github.com/Peleke/hreysi/releases/download/v0.1.5/hreysi_0.1.5_darwin_amd64.tar.gz"
+      sha256 "c29b3cece86a017b32bd3b8246b448825ea230f6dfd578696de7fecc3b36f405"
 
       define_method(:install) do
         bin.install "hreysi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Peleke/hreysi/releases/download/v0.1.4/hreysi_0.1.4_darwin_arm64.tar.gz"
-      sha256 "8fdef3ff8a873096ae752be5993e84b6b1a74924fa043988b855c5378e3a4242"
+      url "https://github.com/Peleke/hreysi/releases/download/v0.1.5/hreysi_0.1.5_darwin_arm64.tar.gz"
+      sha256 "09d72ba67c7749f02bb7751a74e7243151ab521c12fdb848bde41f3176ddeb06"
 
       define_method(:install) do
         bin.install "hreysi"
@@ -29,15 +29,15 @@ class Hreysi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Peleke/hreysi/releases/download/v0.1.4/hreysi_0.1.4_linux_amd64.tar.gz"
-      sha256 "f412f986360fbaf6081a723063236755d4dba0f3168bf1d70b751f788fe33dde"
+      url "https://github.com/Peleke/hreysi/releases/download/v0.1.5/hreysi_0.1.5_linux_amd64.tar.gz"
+      sha256 "8910d36ea4485e27ba153c2ae4fe9985526f8f0d3898dbb33746088999e1a245"
       define_method(:install) do
         bin.install "hreysi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Peleke/hreysi/releases/download/v0.1.4/hreysi_0.1.4_linux_arm64.tar.gz"
-      sha256 "e56caee50c81069c7ca2e5492a8cea1b23884bf8ff3bb2c8bef5dc8f38a27ef0"
+      url "https://github.com/Peleke/hreysi/releases/download/v0.1.5/hreysi_0.1.5_linux_arm64.tar.gz"
+      sha256 "53c9faad78ccb10bb57276d1ed575482a12b6d13a087a35b43ceebae32a5bd24"
       define_method(:install) do
         bin.install "hreysi"
       end
